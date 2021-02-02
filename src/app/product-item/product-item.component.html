@@ -1,0 +1,37 @@
+
+  <!-- <div class="col-lg-2 col-md-4 col-sm-4 col-4 shadoww d-md-none d-sm-none d-none d-lg-block"
+  style="float: left;"onclick="item()">
+  <div class="card bordernone">
+    <img class="card-img-top" src="assets/img/1 (2).jpg" alt="Card image" style="width:100%">
+    <div class="card-body cardbody">
+      <span class="card-text">Bundle Of (15) Women Ankle Socks For Women</span><br>
+      <span class="aftprice">EGP 65</span><br>
+      <span class="befprice">EGP 299</span>
+
+    </div>
+  </div>
+</div> -->
+<div class="row mb-4 p-3">
+<div class="col-lg-3 col-12 ">
+    <div class="card item">
+        <!-- [style.backgroundImage]="'url('+product.imagesUrls[0]+')'" -->
+      <img class="card-img-top"   [src]="product.imagesUrls[0]" alt="Card image" style="width:100%; height:208px;">
+          <div class="card-body ItemBody">
+          <a href="itemPage.html" class="card-text">
+            {{product.name}}
+          </a>
+          <h6>{{product.discount? product.price - (product.price*product.discount/100) : product.price}}</h6>
+          <p><span class="discount">{{product.price}}</span><span class="badge badge-secondary">-{{product.discount}} %</span></p>
+          <div class="container">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span>(5)</span>
+          </div>
+      </div>
+      <a href="cart.html" class="btn btn-primary btn-block" >ADD TO CART</a>
+    </div>
+    </div>
+</div>

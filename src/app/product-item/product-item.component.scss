@@ -1,0 +1,129 @@
+// .shadoww {
+//     transition: transform .2s;
+//   }
+
+//   .shadoww:hover {
+//     cursor: pointer;
+//     transform: scale(1.02);
+//       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+//   }
+
+//   .bordernone {
+//     border: none;
+//   }
+
+//   .cardbody{
+//     white-space: nowrap;
+//     overflow: hidden;
+// }
+// .befprice{
+//     font-size: 13px;
+//     text-decoration-line: line-through;
+//     color: gray;
+        
+// }
+// .aftprice{
+//     font-size: 16px;
+//     font-weight: 500;
+// }
+
+
+  
+  .card-body{
+    padding:3px;
+  }
+
+  .ItemBody{
+    height:220px;
+    overflow: hidden;
+  }
+
+  .card-text:hover{
+    color: orangered;
+    cursor: pointer;
+    text-decoration: none; 
+  }
+
+  .ItemBody .card-text {
+
+    overflow: hidden;
+    font-size:13;
+    display: block;
+    height:120px;
+    text-decoration:none;
+    font-family: 'Times New Roman';
+  }
+
+  .discount{
+    color: #787878;
+    text-decoration: line-through;
+  }
+  .fa{
+    color: lightgray;
+  }
+  .item{
+    border: none;
+  }
+  .item:hover{
+  transform: scale(1.01);
+  box-shadow:5px 5px 10px rgba(211, 211, 211, 0.801),-5px -5px 10px rgba(211, 211, 211, 0.657);
+  
+  }
+  .item button{
+    visibility: hidden;
+  }
+  .item:hover button{
+    visibility: visible;
+  }
+  .badge-secondary{
+    background-color:rgba(255, 68, 0, 0.192);
+    color: orangered;
+  }
+  
+  .checked {
+    color: darkorange;
+  }
+  .btn-primary{
+    background-color:rgb(246, 66, 0);
+    border-color:rgb(255, 68, 0) ;
+  }
+  
+  .btn-primary:hover{
+    background-color: rgb(255, 137, 94) ;
+    color: white;
+  }
+  a:not([href]):not([tabindex]) {
+      color: white;
+      text-decoration: none;
+      font-weight: bolder;
+  }
+  
+  a{
+    color: black;
+    
+  }
+  a:hover{
+    color: black;
+  }
+
+  .filter i{
+     color: rgb(177, 177, 177);
+     padding:10px;
+     border-radius:50%;
+   }
+  .filter a:hover i{
+    background-color: rgba(255, 105, 180, 0.212);
+  }
+  .item .card-body .btn{
+    background-color: orangered;
+    color: white;
+    
+  } 
+  @media screen and (max-width:1000px) {
+  .item .card-body .btn{
+    font-size:10px;
+  }
+  }
+  
+  
