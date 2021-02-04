@@ -15,13 +15,14 @@
 <div class="col-lg-3 col-12 ">
     <div class="card item">
         <!-- [style.backgroundImage]="'url('+product.imagesUrls[0]+')'" -->
-      <img class="card-img-top"   [src]="product.imagesUrls[0]" alt="Card image" style="width:100%; height:208px;">
+      <img class="card-img-top"   [src]="product.imagesUrls" alt="Card image" style="width:100%; height:208px;">
           <div class="card-body ItemBody">
           <a href="itemPage.html" class="card-text">
             {{product.name}}
           </a>
           <h6>{{product.discount? product.price - (product.price*product.discount/100) : product.price}}</h6>
-          <p><span class="discount">{{product.price}}</span><span class="badge badge-secondary">-{{product.discount}} %</span></p>
+          <p><span class="discount" *ngIf="product.discount">{{product.price}}</span>
+            <span class="badge badge-secondary" *ngIf="product.discount" >-{{product.discount}} %</span></p>
           <div class="container">
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
@@ -31,7 +32,7 @@
         <span>(5)</span>
           </div>
       </div>
-      <a href="cart.html" class="btn btn-primary btn-block" >ADD TO CART</a>
+      <a  class="btn btn-primary btn-block" (click)="addedToCart()">ADD TO CART</a>
     </div>
     </div>
 </div>
