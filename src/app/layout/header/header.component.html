@@ -1,0 +1,63 @@
+  <!--  header  -->
+  <nav class="navbar navbar-expand-sm navbar-light d-none d-lg-block" style="background-color:#f5f5f5;height: 35px;">
+    <ul class="navbar-nav">
+        <li class="nav-item" style="margin-left: 75px;">
+            <a class="nav-link u" href="homePage.html" style="color: darkorange;font-size: 12px;font-weight: bold;"><img
+                    src="../../../../assets/img/unnamed.png" width="14px;"> Sell on Jumia</a>
+        </li>
+        <li class="nav-item" style="margin-left: 355px">
+            <a class="nav-link" href="#" style="color: darkorange;font-size: 12px;font-weight: bold;"><i
+                    class="fas fa-crown"></i> PRIMO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#" style="color: darkgray;font-size: 12px;font-weight: bold;"><span
+                    class="o"><i class="far fa-star"></i> REWARDS</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="color: darkgray;font-size: 12px;font-weight: bold;"><span
+                    class="b"><i class="fas fa-shield-alt"></i> PAY</span></a>
+        </li>
+    </ul>
+</nav>
+
+<nav class="navbar navbar-expand-md navbar-light sticky-top"
+    style="background-color:white;height: 72px;box-shadow: 0 4px 4px -4px rgba(0,0,0,0.12)">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" routerLink="" style="margin-left: 75px;"><img src="../../../../assets/img/download.png" width="135px"></a>
+    <a [routerLink]="['/product', 'add']" class="btn addLarge small font-weight-bold" role="button" style="width:180px;  background-color: darkorange;color:white;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);margin-left:10px;">
+        <i class="fas fa-plus pr-2 "></i>Add Product
+    </a>
+    <a class="btn addSmall" [routerLink]="['/product', 'add']"  role="button" style="  background-color: darkorange;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);margin-left:10px;">
+        <i class="fas fa-plus text-white "></i>
+    </a>
+    <i class="fas fa-search icon d-none d-xl-block" id="search"></i>
+    <input class="input-field d-none d-xl-block" type="text" placeholder="Search products, brands and categories">
+    <a href="searchPage.html" role="button" class="btn d-none d-xl-block"
+        style="background-color: darkorange;color:white;font-size: 14px;font-weight: 600;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);margin-left: 10px;">SEARCH</a>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <ul class="navbar-nav">
+            <li class="nav-item" style="margin-left: 10px;">
+                <a class="nav-link" href="login.html"><span class=" log o"><i class="far fa-user"></i> Login <i
+                            class="fas fa-angle-down"></i></span></a>
+            </li>
+            <li class="nav-item" style="margin-left: 10px;">
+                <a class="nav-link" href="#"><span class=" log o"><i class="far fa-question-circle"></i> Help <i
+                            class="fas fa-angle-down"></i></span></a>
+            </li>
+            <li class="nav-item" style="margin-left: 10px;">
+                <div class="notification notification--danger">
+                    {{cartArray?cartArray.length : 0}}
+                </div>
+                <a class="nav-link" routerLink="cart" ><span class=" log o"><i class="fas fa-shopping-cart"></i>Cart
+                   
+                    </span></a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+

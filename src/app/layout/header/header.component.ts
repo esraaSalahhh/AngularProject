@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Product } from '../_model/product';
-import { ProductService } from '../_services/product.services';
+import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/_model/product';
+import { ProductService } from 'src/app/_services/product.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +8,8 @@ import { ProductService } from '../_services/product.services';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-cartArray:Product[]=[];
+  cartArray:Product[]=[];
+
   constructor(private productService:ProductService) { }
 
   ngOnInit(): void {

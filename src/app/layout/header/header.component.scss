@@ -1,0 +1,76 @@
+.o:hover {
+    color: darkorange;
+  }
+
+  .b:hover {
+    color: deepskyblue;
+  }
+
+  .icon {
+    margin-left: 70px;
+    padding: 9px;
+    color: #787878;
+    width: 40px;
+    font-size: 17px;
+    border: 1px solid #D0D0D0;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 37px;
+
+  }
+
+  .input-field {
+    left: 10px;
+    border: 1px solid #D0D0D0;
+    font-size: 17px;
+    width: 520px;
+    border-left: none;
+    height: 37px;
+    /*            text-align: center;*/
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+  }
+       .log {
+    font-size: 17px;
+    font-weight: 500;
+    color: #303030;
+  }
+       .u:hover {
+    text-decoration: underline;
+  }
+  @media (min-width: 786px){
+    .addLarge{
+      display: block;
+    }
+    .addSmall{
+      display: none;
+    }
+  }
+    @media (max-width: 786px){
+      .addLarge{
+        display: none;
+      }
+      .addSmall{
+        display: block;
+      }
+
+    }
+
+    .notification
+{
+    color: white;
+    background-color: darkorange;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    position: absolute;
+   
+
+    
+}
