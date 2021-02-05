@@ -1081,37 +1081,7 @@
                 </div>
                 <!--row3-->
                 <div class="row p-1">
-                    <div class="col-lg-3 col-md-6 col-sm-6  p-2  rounded  moveCol btnVisable">
-                        <a href="itemPage.html" class="text-decoration-none">
-                        <img src="images/Row1order1.jpg" width="100%">
-                        <div style="height: 230px">
-                           <span class="bg-danger text-white small">Offical Store</span>
-
-                            <p class="small text-capitalize">descount nuts roasted &amp; salted cashew - 500gm
-                                <span class="d-block font-weight-bold text-uppercase">
-                                    egp 159
-                                </span>
-                                <span class=" text-uppercase small text-secondary">
-                                    <del>egp 245</del>
-                                </span>
-                            </p>
-                            <span class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <span class="text-secondary">(918)</span>
-                            </span>
-                            <img src="images/jumiaExpress.png" class="img-fluid" width="60%">
-                            <span class="d-block text-capitalize small ">eligble for free shopping</span>
-                        
-                        </div>
-                        </a>
-                        <a href="cart.html" role="button" class="btn btn-warning text-white btn-block btnHidden">ADD TO CART
-                        </a>
-
-                    </div>
+                
                     <app-product-item  *ngFor='let prod of itemCategories()'  [product]='prod' class="col-lg-3 col-md-6 col-sm-6  p-2  rounded  moveCol btnVisable"></app-product-item>
                 </div>
                 <!--row4-->
@@ -1126,13 +1096,8 @@
                     <div class="col-lg-12">
                         <div class="mx-auto" style="width:250px;">
                             <ul class="pagination punctuation">
-                                <li class="page-item "><a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                <li class="page-item "><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-                                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                <li class="page-item " *ngFor='let j of NumberOfPages() ;  let i = index'[class]="{'active':currentPage===i}"  (click)='currentPage=i'><a class="page-link" >{{j}}</a></li>
+ 
                             </ul>
                         </div>
                     </div>

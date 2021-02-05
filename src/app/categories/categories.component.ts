@@ -10,6 +10,9 @@ import {Product}  from '../_model/product'
 })
 export class CategoriesComponent implements OnInit {
 
+
+sizePage:number=10;
+
   constructor(
     private Service :ProductService ,
     private activerout:ActivatedRoute,
@@ -23,4 +26,16 @@ let NameOfCategory=this.activerout.snapshot.params.id;
 console.log(NameOfCategory);
 return this.Service.getCategoris(NameOfCategory)
 }  
+
+ NumberOfPages():number[]{
+
+let numberofPages:number[]=[];
+for (let y =0 ; y <this.itemCategories().length/6 ; y++){
+numberofPages.push(y+1);
+}  
+return numberofPages;
+}
+
+
+
 }
