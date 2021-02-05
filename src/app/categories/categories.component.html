@@ -98,7 +98,7 @@
                             <a href="itemPage.html" class="text-decoration-none">
                             <img class="card-img-top" src="images/rice.jpg" style="width:100%">
                             <div class="text-center pb-2">
-                                <span>Rice &amp; Grains</span>
+                                <span>Rice &amp; Graidddddns</span>
                             </div>
                             </a>
                         </div>
@@ -169,174 +169,54 @@
                     </div>
                 </div>
                 <!--  row2  -->
+             
                 <div id="demo" class="carousel slide" data-ride="carousel">
 
                     <!-- Indicators -->
                     <ul class="carousel-indicators">
                         <li data-target="#demo" data-slide-to="0" class=""></li>
-                        <li data-target="#demo" data-slide-to="1" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1" class=""></li>    
+                        <li data-target="#demo" data-slide-to="2" class=""></li>
+                        <li data-target="#demo" data-slide-to="3" class=""></li>
+                        <li data-target="#demo" data-slide-to="4" class=""></li>
+                        <li data-target="#demo" data-slide-to="5" class="active"></li>
+      
                     </ul>
 
                     <!-- The slideshow -->
                     <div class="carousel-inner">
                         <div class="carousel-item">
                             <div class="row p-1">
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol ">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient1.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">Jumia grocery box-10pcs
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 159
-                                        </span>
-                                        <span class=" text-uppercase small text-secondary">
-                                            <del>egp 200</del>
-                                        </span>
-                                    </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol ">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient2.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 4
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol ">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient3.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya spaghetti pasta-...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 4
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient4.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 31
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block ">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient5.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 20
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block ">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient6.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 19
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
+                             <app-item-side-bar  *ngFor='let u of itemPagination()' [product]=u    class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol"></app-item-side-bar>
+                             
                             </div>
-
                         </div>
+
+
+
                         <div class="carousel-item active">
                             <div class="row p-1">
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient1.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">Jumia grocery box-10pcs
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 159
-                                        </span>
-                                        <span class=" text-uppercase small text-secondary">
-                                            <del>egp 200</del>
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient2.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 4
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient3.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya spaghetti pasta-...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 4
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol ">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient4.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 31
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol ">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient5.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 20
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol ">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/ingredient6.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 19
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                            </div>
+                                <app-item-side-bar  *ngFor='let u of itemPagination()' [product]=u    class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol"></app-item-side-bar>
+                               </div>
                         </div>
+
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo2" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark"></span>
+                        </a>
 
                     </div>
 
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev " href="#demo" data-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark rounded p-3"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                        <span class="carousel-control-next-icon bg-dark rounded p-3"></span>
-                    </a>
-
                 </div>
+
+
+
+
+
             </div>
         </div>
         <!--  row4  -->
@@ -357,156 +237,29 @@
                     <!-- Indicators -->
                     <ul class="carousel-indicators">
                         <li data-target="#demo2" data-slide-to="0" class=""></li>
-                        <li data-target="#demo2" data-slide-to="1" class="active"></li>
-
+                        <li data-target="#demo2" data-slide-to="1" class=""></li>    
+                        <li data-target="#demo2" data-slide-to="2" class=""></li>
+                        <li data-target="#demo2" data-slide-to="3" class=""></li>
+                        <li data-target="#demo2" data-slide-to="4" class=""></li>
+                        <li data-target="#demo2" data-slide-to="5" class="active"></li>
+      
                     </ul>
 
                     <!-- The slideshow -->
                     <div class="carousel-inner">
                         <div class="carousel-item">
                             <div class="row p-1">
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik1.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">Jumia grocery box-10pcs
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 159
-                                        </span>
-                                        <span class=" text-uppercase small text-secondary">
-                                            <del>egp 200</del>
-                                        </span>
-                                    </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik4.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 4
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4  p-2 col-4 rounded moveCol">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik3.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya spaghetti pasta-...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 4
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik4.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 31
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik5.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 20
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik6.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 19
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
+                             <app-item-side-bar  *ngFor='let u of itemPagination()' [product]=u    class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol"></app-item-side-bar>
+                             
                             </div>
                         </div>
+
+
+
                         <div class="carousel-item active">
                             <div class="row p-1">
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik1.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">Jumia grocery box-10pcs
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 159
-                                        </span>
-                                        <span class=" text-uppercase small text-secondary">
-                                            <del>egp 200</del>
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol d-sm-none d-none d-lg-block">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik4.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 4
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4  p-2  rounded moveCol d-sm-none d-none d-lg-block">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik3.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya spaghetti pasta-...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 4
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik4.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 31
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik5.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 20
-                                        </span>
-                                    </p>
-                                    </a>
-
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol">
-                                    <a href="itemPage.html" class="text-decoration-none">
-                                    <img src="images/quik6.jpg" width="100%" height="70%">
-                                    <p class="small text-capitalize">hedya penne pasta-400...
-                                        <span class="d-block font-weight-bold text-uppercase">
-                                            egp 19
-                                        </span>
-                                    </p>
-                                    </a>
-                                </div>
-
-                            </div>
+                                <app-item-side-bar  *ngFor='let u of itemPagination()' [product]=u    class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol"></app-item-side-bar>
+                               </div>
                         </div>
 
 
@@ -1150,7 +903,7 @@
 
             </div>
         </div>
-    </div>
+    
     <!-- row12-->
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
