@@ -10,8 +10,9 @@ import {Product}  from '../_model/product'
 })
 export class CategoriesComponent implements OnInit {
 
-
-sizePage:number=10;
+s
+sizePage:number=6;
+currentPage:number=0;
 
   constructor(
     private Service :ProductService ,
@@ -28,13 +29,20 @@ return this.Service.getCategoris(NameOfCategory)
 }  
 
  NumberOfPages():number[]{
-
 let numberofPages:number[]=[];
-for (let y =0 ; y <this.itemCategories().length/6 ; y++){
+for (let y =0 ; y <this.itemCategories().length/this.sizePage ; y++){
 numberofPages.push(y+1);
 }  
 return numberofPages;
 }
+
+
+itemPagination():Product[]{
+let start=this.currentPage*this.sizePage;
+let end=(this.sizePage*this.currentPage)+this.sizePage
+  return this.itemCategories().slice(start, end)
+}
+
 
 
 
