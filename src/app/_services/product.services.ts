@@ -8,6 +8,7 @@ export class ProductService {
         id: 1,
         name: 'photo camera',
         price: 300,
+        category:'supermarket',
         imagesUrls: '../../../../assets/img/1 (2).jpg',
       },
       {
@@ -15,19 +16,114 @@ export class ProductService {
         name: 'camera',
         price: 6000,
         discount: 30,
+        category:'supermarket',
         imagesUrls: '../../../../assets/img/product.jpg',
       },
       {
-        id: 3,
-        name: 'phone',
-        price: 500,
+        id: 2,
+        name: 'camera',
+        price: 6000,
         discount: 30,
-        imagesUrls: '../../../../assets/img/1 (2).jpg',
-      }
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      {
+        name: 'camera',
+        price: 6000,
+        discount: 30,
+        category:'supermarket',
+        imagesUrls: '../../../../assets/img/product.jpg',
+      },
+      
+     
     ];
       productAdded=new EventEmitter<Product>();
     getAllProducts(): Product[] {
         return this.products.slice();      ///act as a clone 
+      }
+
+      getCategoris(name:string):Product[]{
+      let x=this.products.filter((ob)=>{
+        return ob.category===name;
+      })
+      return  x;
       }
 
       getProductById(id: number): Product {
