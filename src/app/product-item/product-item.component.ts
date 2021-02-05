@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from '../_model/product';
-
+import { ProductService } from 'src/app/_services/product.services';
 @Component({
   selector: 'app-product-item',
   templateUrl: './product-item.component.html',
@@ -8,11 +8,18 @@ import { Product } from '../_model/product';
 })
 export class ProductItemComponent implements OnInit {
   @Input() product :Product;
-  constructor() {
-    this.product={id:1 ,name:'Tecno Mobili REVERSIBLE OFFICE DESK-OAKSHARE THIS PRODUCT',price:300,discount:10,imagesUrls:['assets/img/product.jpg']};
+  
+  constructor(private productService:ProductService) {
+   
    }
 
   ngOnInit(): void {
+  }
+
+
+  addedToCart(){
+    this.productService.productAdded.emit(this.product);
+    console.log(this.product)
   }
 
 }

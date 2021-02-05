@@ -45,10 +45,11 @@
               class="fas fa-angle-down"></i></span></a>
       </li>
       <li class="nav-item" style="margin-left: 15px;">
+        <div class="notification notification--danger">
+          {{cartArray?cartArray.length : 0}}
+      </div>
         <a class="nav-link" href="cart.html"><span class=" log o"><i class="fas fa-shopping-cart"></i> Cart </span></a>
       </li>
-
-
     </ul>
   </div>
 </nav>
