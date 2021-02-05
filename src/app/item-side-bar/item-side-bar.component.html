@@ -1,6 +1,6 @@
-<a href="itemPage.html" class="text-decoration-none">
+<a  class="text-decoration-none">
     <img [src]="product.imagesUrls" width="100%" height="70%">
-    <p class="small text-capitalize">{{product.name}}
+    <p class="small text-capitalize">{{product.data[0].name}}
         <span class="d-block font-weight-bold text-uppercase">
             {{product.price| currency:'UDS'}}
         </span>

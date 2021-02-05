@@ -1,0 +1,50 @@
+  /* footer*/
+  .footerLarge{
+    display: none;
+}
+@media (min-width: 1025px){
+.footerLarge{
+    display: block;
+}
+
+.main:hover {
+text-decoration: none;
+
+}
+
+.reword:hover {
+color: darkorange;
+
+}
+
+.pay:hover {
+color: deepskyblue;
+
+}
+
+.bordColor:hover {
+border-color: darkorange;
+color: darkorange;
+background-color: #282828;
+}
+
+.socialIcon {
+font-size: 22px;
+
+}
+
+.socialIcon:hover {
+color: darkorange;
+
+}
+
+}
+.footerSmallDevices{
+display: none;
+}
+@media (max-width: 1025px){
+.footerSmallDevices{
+   display: block;
+}
+
+}
