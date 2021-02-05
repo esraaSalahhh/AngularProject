@@ -5,15 +5,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductService } from './_services/product.services';
+import { CategoriesComponent } from './categories/categories.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    CategoriesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path:'categories/:id', component:CategoriesComponent},
+    ])
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
