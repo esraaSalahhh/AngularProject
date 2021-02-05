@@ -8,6 +8,7 @@ import { ProductService } from './_services/product.services';
 import { CategoriesComponent } from './categories/categories.component';
 import { RouterModule } from '@angular/router';
 import { ItemSideBarComponent } from './item-side-bar/item-side-bar.component';
+import { ItemBarComponent } from './item-bar/item-bar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ItemSideBarComponent } from './item-side-bar/item-side-bar.component';
     HeaderComponent,
     ProductItemComponent,
     CategoriesComponent,
-    ItemSideBarComponent
+    ItemSideBarComponent,
+    ItemBarComponent
   ],
   imports: [
     BrowserModule,

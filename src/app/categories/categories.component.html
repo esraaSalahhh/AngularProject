@@ -30,130 +30,12 @@
                 </div>
                 <!--  row2  -->
                 <div class="row mb-2">
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol" style="width:100%">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/rice.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Rice &amp; Grains</span>
-                            </div>
-                            </a>
-                        </div>
+                    <app-item-bar  *ngFor='let u of itemPagination()' [product]=u  class="col-lg-2 col-md-4 col-sm-4 col-6"></app-item-bar>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/pasta.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Pasta</span>
-                            </div>
-                            </a>
-                        </div>
+                    <!--  row3  -->
+                    <div class="row">
+                        <app-item-bar  *ngFor='let u of itemPagination()' [product]=u  class="col-lg-2 col-md-4 col-sm-4 col-6"></app-item-bar>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/oils.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Oils &amp; Ghee</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/vingar.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Vingar</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/cannedfood.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Canned Food</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/herbs.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Herbs &amp; Spices</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--  row3  -->
-                <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/rice.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Rice &amp; Graidddddns</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/herbs.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Herbs &amp; Spices</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/pasta.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Pasta</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/oils.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Oils &amp; Ghee</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/vingar.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Vingar</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/cannedfood.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Canned Food</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <!--  row3  -->
@@ -309,130 +191,12 @@
                 </div>
                 <!--  row2  -->
                 <div class="row mb-2">
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast1.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Cereals</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast2.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Biscutis</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast3.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Spreads &amp; Jam</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast4.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Chocolates</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast5.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Crips &amp; Chips</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast6.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Nuts</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
+                   
+                <app-item-bar  *ngFor='let u of itemPagination()' [product]=u  class="col-lg-2 col-md-4 col-sm-4 col-6"></app-item-bar>
                 </div>
                 <!--  row3  -->
                 <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast7.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Watwr</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast8.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Soft Drink</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast9.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Juices</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast10.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Coffee</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast11.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Tea</span>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                        <div class="card moveCol">
-                            <a href="itemPage.html" class="text-decoration-none">
-                            <img class="card-img-top" src="images/breakfast12.jpg" style="width:100%">
-                            <div class="text-center pb-2">
-                                <span>Cocoa</span>
-                            </div>
-                            </a>
-                        </div>
-
-                    </div>
+                    <app-item-bar  *ngFor='let u of itemPagination()' [product]=u  class="col-lg-2 col-md-4 col-sm-4 col-6"></app-item-bar>
                 </div>
             </div>
         </div>
@@ -450,44 +214,9 @@
                 </div>
                 <!--  row2  -->
                 <div class="row p-1">
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-2 col-6 rounded  moveCol">
-                        <a href="itemPage.html" class="text-decoration-none">
-                        <img src="images/stayhydrated1.jpg" width="100%" height="70%">
-                        <p class="small text-capitalize">red bull suger free energ...
-                            <span class="d-block font-weight-bold text-uppercase">
-                                egp 21
-                            </span>
-                            <span class=" text-uppercase small text-secondary">
-                                <del>egp 25</del>
-                            </span>
-                        </p>
-                        </a>
-
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-2 col-6 rounded  moveCol">
-                        <a href="itemPage.html" class="text-decoration-none">
-                        <img src="images/stayhydrated2.jpg" width="100%" height="70%">
-                        <p class="small text-capitalize">red bull energ drink...
-                            <span class="d-block font-weight-bold text-uppercase">
-                                egp 80
-                            </span>
-                        </p>
-                        </a>
-
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6  p-2  rounded moveCol">
-                        <a href="itemPage.html" class="text-decoration-none">
-                        <img src="images/stayhydrated3.jpg" width="100%" height="70%">
-                        <p class="small text-capitalize">red bull suger free energ...
-                            <span class="d-block font-weight-bold text-uppercase">
-                                egp 500
-                            </span>
-                        </p>
-                        </a>
-
-                    </div>
-
-                </div>
+                    <app-item-side-bar  *ngFor='let u of itemPagination()' [product]=u    class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol"></app-item-side-bar>
+                    
+                   </div>
             </div>
         </div>
 
@@ -505,21 +234,8 @@
                 </div>
                 <!--  row2  -->
                 <div class="row p-1">
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-6 p-2  rounded moveCol">
-                        <a href="itemPage.html" class="text-decoration-none">
-                        <img src="images/coffee1.jpg" width="100%" height="70%">
-                        <p class="small text-capitalize">red bull suger free energ...
-                            <span class="d-block font-weight-bold text-uppercase">
-                                egp 21
-                            </span>
-                            <span class=" text-uppercase small text-secondary">
-                                <del>egp 25</del>
-                            </span>
-                        </p>
-                        </a>
-
-                    </div>
-                </div>
+                    <app-item-side-bar  *ngFor='let u of itemPagination()' [product]=u    class="col-lg-2 col-md-4 col-sm-4 col-4 p-2  rounded moveCol"></app-item-side-bar>
+                   </div>
             </div>
         </div>
         <!--  row9  -->
