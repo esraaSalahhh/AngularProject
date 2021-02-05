@@ -1,0 +1,95 @@
+<!-- add Item -->
+<div class="row container">
+    <div class="col-12">
+    <form #myForm="ngForm"  class="add-product" action="">
+        <div class="add-product__images slider">
+            
+            <div class="slider__items">
+                <div class="slider__item active" style="background-image: url(img/products/product-grey-7.jpg)"></div>
+                <div class="slider__item" style="background-image: url(img/products/product-grey-7.jpg)"></div>
+                <div class="slider__item" style="background-image: url(img/products/product-grey-7.jpg)"></div>
+            </div>
+            <div class="slider__indicators">
+                <span class="slider__indicator active"></span>
+                <span class="slider__indicator"></span>
+                <span class="slider__indicator"></span>
+            </div>
+        </div>
+        <div class="add-product__data">
+            <div class="form-controls">
+                <section class="tabs">
+                    <div class="tabs__headers col-12 col-lg-6 col-sm-12 ">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active"  data-toggle="tab" href="#">English</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link"  data-toggle="tab" href="#">Arabic</a>
+                            </li>
+                          </ul>
+                    </div>
+                   
+                    <div class="tabs__bodies">
+                        <div class="tabs__body active">
+                            <div class="form-group ">
+                                <label class="font-weight-bold" for="">Name</label>
+                                <input [ngClass]="{'invalid': textInputName.invalid && textInputName.touched}" #textInputName="ngModel" required [(ngModel)]="product.data[0].name" class="col-12 col-lg-6 col-sm-12  form-control " type="text" name="txtName" id="">
+                                <div *ngIf="textInputName.errors && (textInputName.invalid || textInputName.touched)">
+                                    <small class="text-danger" *ngIf="textInputName.errors.required">Name Product is required</small>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="">Description</label>
+                                <textarea [ngClass]="{'invalid': textInputDescription.invalid && textInputDescription.touched}" #textInputDescription="ngModel"  required [(ngModel)]="product.data[0].description"  class="outLine col-12 col-lg-6 col-sm-12 form-control" name="txtDesc" id="" cols="30" rows="4"></textarea>
+                                <div *ngIf="textInputDescription.errors && (textInputDescription.invalid || textInputDescription.touched)">
+                                    <small class="text-danger" *ngIf="textInputDescription.errors.required">Description Product is required</small>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </section>
+
+                <div class="form-group " >
+                    <label class="font-weight-bold" for="">Price</label>
+                    <input [ngClass]="{'invalid':priceInput.invalid && priceInput.touched }" #priceInput="ngModel" required [(ngModel)]="product.price"  class="col-12 col-lg-6 col-sm-12 form-control" type="number" name="price" id="">
+                </div>
+                <div class="add-product__discount">
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="">Status</label>
+                        <div class="form-group__radios" [ngClass]="{'invalid':discountInput.touched}">
+                            <div class="form-group__radio"><input type="radio" value="0"  name="radioButton" #disabledRadio="ngModel"  [(ngModel)]="radiobutton" id=""><span class="ml-2">On Sale</span></div>
+                            <div class="form-group__radio"><input type="radio" value="1" name="radioButton" #disabledRadio2="ngModel"  [(ngModel)]="radiobutton" id=""><span class="ml-2">Not On Sale</span></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="">Discount</label>
+                        <input [ngClass]="{'invalid':discountInput.invalid && discountInput.touched }" #discountInput="ngModel" required [(ngModel)]="product.discount" class="col-12 col-lg-6 col-sm-12 form-control" type="number" name="discount" id="" [disabled]="radiobutton==1">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold" for="">Payment Types</label>
+                    <div class="form-group__checkboxs">
+                        <div class="form-group__checkbox" *ngFor="let payment of paymentTypes; let i =index">
+                            <input ngModel type="checkbox" [value]="payment.id" [name]="'check_' + i" id="">
+                            <span class="ml-2">{{payment.name}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold" for="">Category</label>
+                    <select [(ngModel)]="product.category.id"  class="col-12 col-lg-6 col-sm-12 form-control" name="ddl" id="">
+                        <option *ngFor="let cat of productCategory" [value]="cat.id" >{{cat.name}}</option>
+                    </select>
+                </div>
+
+                
+                <div class="add-product__actions">
+                    <button href="#" class="btn btn-cancel btn-secondary btn-outline-none  text-white mr-2 " routerLink="" >Cancel</button>
+                    <button href="#" class="btn btn-add btn-outline-light text-white text-uppercase" [disabled]="myForm.invalid" (click)="onSubmit(myForm)" >Add</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</div>

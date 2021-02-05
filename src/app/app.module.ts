@@ -10,6 +10,11 @@ import { RouterModule } from '@angular/router';
 import { ItemSideBarComponent } from './item-side-bar/item-side-bar.component';
 import { ItemBarComponent } from './item-bar/item-bar.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { PaymentTypeService } from './_services/payment-type.service';
+import { ProductCategoryService } from './_services/product-category.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,17 +24,21 @@ import { HomeComponent } from './home/home.component';
     CategoriesComponent,
     ItemSideBarComponent,
     ItemBarComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot([
-      {path:'categories/:id', component:CategoriesComponent},
       {path:'', component:HomeComponent},
       {path:'', redirectTo:'home' , pathMatch :'full'},
+      {path:'categories/:id', component:CategoriesComponent},
+      {path:'product/add', component:AddProductComponent},
     ])
   ],
-  providers: [ProductService],
+  providers: [ProductService,PaymentTypeService, ProductCategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
