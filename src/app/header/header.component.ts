@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../_model/product';
-import { ProductService } from '../_services/product.services';
+import { ProductService } from '../_services/product.service';
 
 @Component({
   selector: 'app-header',

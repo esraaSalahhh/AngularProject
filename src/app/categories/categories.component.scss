@@ -1,0 +1,309 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #f2f3f4;
+}
+
+.continer1 {
+    width: 80%;
+    margin: auto;
+}
+
+// /.moveCol,/
+.advertisment {
+    transition: .3s;
+}
+
+.moveCol:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1) !important;
+    transform: scale(1.02);
+    cursor: pointer;
+
+}
+
+.advertisment:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translate(3px);
+
+}
+
+.noLine li:hover {
+    background-color: #f2f3f4;
+
+}
+
+.noLine li a {
+    text-decoration: none;
+}
+
+.rating i {
+    color: orange;
+
+}
+
+@media (min-width: 992px) {
+    .btnHidden {
+        visibility: hidden;
+    }
+
+    .btnVisable:hover .btnHidden {
+        visibility: visible !important;
+    }
+
+}
+
+.btnHidden:hover {
+    background-color: #e67e22;
+}
+
+.punctuation li a {
+    color: #000;
+}
+
+.summary a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+@media (max-width:1025px){
+    #myBtn{
+    display: none !important;
+}
+
+}
+
+
+@media (min-width: 1025px) {
+    #myBtn {
+        display: block;
+        position: fixed;
+        right: 40px;
+        bottom: 20px;
+        z-index: 99;
+        border-radius: 50%;
+        padding: 12px;
+        background-color: #fff;
+    }
+
+    #myBtn:hover {
+        background-color: #E9967A;
+        cursor: pointer;
+
+    }
+
+}
+
+.menuSupermarket:hover {
+    color: #e67e22;
+
+}
+
+
+  /* div filter*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(88, 88, 88, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 166, 0, 0.561);
+}
+
+.card-body {
+    padding: 3px;
+}
+
+.card-text:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.discount {
+    color: #787878;
+    text-decoration: line-through;
+}
+
+.fa {
+    color: lightgray;
+}
+
+.item {
+    border: none;
+}
+
+.item:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 2px 7px rgba(211, 211, 211, 0.657), -2px -2px 5px rgba(211, 211, 211, 0.657);
+
+}
+
+.item a {
+    visibility: hidden;
+}
+
+.item:hover a {
+    visibility: visible;
+}
+
+.badge-secondary {
+    background-color: rgba(255, 68, 0, 0.192);
+    color: orangered;
+}
+
+.checked {
+    color: darkorange;
+}
+
+.btn-primary {
+    background-color: rgb(255, 120, 71);
+    border-color: rgb(255, 137, 94);
+}
+
+a:not([href]):not([tabindex]) {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.page-link {
+    color: #000;
+    font-weight: bolder;
+}
+
+.page-link:hover {
+    background-color: white;
+    outline: none;
+    color: black;
+    border: 1px solid grey;
+}
+
+.page-link:focus {
+
+    box-shadow: none;
+    border-color: #ff5f02;
+}
+
+a {
+    color: black;
+
+}
+
+a:hover {
+    color: black;
+}
+
+.CATEGORY a {
+    background-color: white;
+}
+
+.CATEGORY a:hover {
+    background-color: rgb(238, 238, 238);
+    color: black;
+}
+
+.filter i {
+    color: rgb(177, 177, 177);
+    padding: 10px;
+    border-radius: 50%;
+}
+.filter{
+    flex-wrap: nowrap;
+}
+
+.filter a:hover i {
+    background-color: rgba(255, 105, 180, 0.212);
+}
+
+.filter .nav-link {
+    padding: 0;
+}
+
+.form-check {
+    padding: 0;
+}
+
+.index::after {
+    content: "<";
+}
+
+.inputsearch {
+
+    border: 1px solid rgba(128, 128, 128, 0.445);
+    width: 70%;
+    border-left: 1px solid rgba(255, 0, 0, 0);
+
+}
+
+input:focus {
+    outline: none;
+
+}
+
+.input-group-text {
+    background-color: rgba(255, 255, 255, 0);
+    border-right: 1px solid rgba(255, 0, 0, 0);
+
+}
+
+.card-title {
+    padding: 10px;
+    padding-bottom: 0;
+
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+        overflow: hidden;
+        width: 100%;
+        -webkit-appearance: none;
+        background-color: #ff330080;
+
+    }
+
+    input[type='range']::-webkit-slider-runnable-track {
+
+        -webkit-appearance: none;
+        color: #ff5f02;
+        margin-top: -1px;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+        z-index: 2;
+        position: relative;
+        box-shadow: 0px 0px 0px #000;
+        border: 1px solid #2497E3;
+        height: 18px;
+        width: 18px;
+        border-radius: 25px;
+        background: #ff5e00;
+        cursor: pointer;
+    }
+
+
+
+}
+
+.bg-light {
+    background-color: white !important;
+
+}
+
+.pre-scrollable {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.sideBar .nav {
+    flex-wrap: nowrap;
+}

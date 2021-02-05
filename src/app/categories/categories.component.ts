@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProductService } from '../_services/product.services';
+import { ProductService } from '../_services/product.service';
 import {Product}  from '../_model/product'
 
 @Component({
@@ -10,7 +10,7 @@ import {Product}  from '../_model/product'
 })
 export class CategoriesComponent implements OnInit {
 
-s
+
 sizePage:number=6;
 currentPage:number=0;
 

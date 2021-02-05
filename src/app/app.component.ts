@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import {ProductService} from 'src/app/_services/product.services';      
-import { Product } from './_model/product';
+import {ProductService} from 'src/app/_services/product.service';     
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,16 +7,12 @@ import { Product } from './_model/product';
 })
 export class AppComponent {
 
-  id:string='Supermarket';
-  products:Product[];
-  title = 'Project';
   constructor(private productService:ProductService) { 
     
   }
 
   
   ngOnInit(): void {
-    this.products=this.productService.getAllProducts();
     
     
   }
