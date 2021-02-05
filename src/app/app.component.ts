@@ -7,12 +7,15 @@ import { Product } from './_model/product';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  id:string='Supermarket';
   products:Product[];
   title = 'Project';
   constructor(private productService:ProductService) { 
     
   }
 
+  
   ngOnInit(): void {
     this.products=this.productService.getAllProducts();
     
